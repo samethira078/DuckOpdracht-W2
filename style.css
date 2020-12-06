@@ -1,0 +1,71 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.container{
+	position: relative;
+	width: 1280px;
+	height: 769px;
+	background-image: url("stage.png");
+	left: 50%;
+	transform: translateX(-50%);
+}
+#achtergrond{
+	position: absolute;
+	width: 1280px;
+	height: 769px;
+	background-image: url("stage.png");
+	left: 50%;
+	transform: translateX(-50%);
+}
+.hit,.miss{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 50px;
+	width: 70px;
+	border: 1px solid black;
+	background-color: #84D342;
+	z-index: 1;
+}
+#eend{
+	position: absolute;
+	background-image: url("duck.gif");
+	height: 250px;
+	width: 250px;
+	left: 530px;
+	top: 200px;
+	z-index: 1;
+}
+.miss{
+	top: 50px;
+	background-color: #CD5344;
+}
+.hit h1, .hit p, .miss h1, .miss p{
+	text-align: center;
+	font-family: 'PT Sans Caption', sans-serif;
+}
+.hit h1, .miss h1{
+	position: absolute;
+	left: 50%;
+	top: -5px;
+	transform: translateX(-50%);
+	font-size: 28px;
+}
+.hit p, .miss p{
+	position: absolute;
+	top: 21px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 25px;
+}
+#reset{
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	height: 200px;
+	width: 600px;
+	font-size: 50px;
+}
